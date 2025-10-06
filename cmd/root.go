@@ -62,7 +62,7 @@ func Execute() {
 
 	// Persistent Flags
 	pf := rootCmd.PersistentFlags()
-	pf.BoolVarP(&Open, "open", "o", false, "Automatically open project in deafult browser")
+	pf.BoolVarP(&Open, "open", "o", false, "Automatically open project in default browser")
 	pf.BoolVarP(&Serve, "serve", "s", false, "Serve the generated files using Echo.")
 	pf.IntVarP(&ServePort, "servePort", "P", 5000, "Serve port number.")
 	pf.StringVarP(&ProxyString, "proxy_string", "p", "", "Proxy connection string. Support http and socks5 https://pkg.go.dev/github.com/gocolly/colly#Collector.SetProxy")
